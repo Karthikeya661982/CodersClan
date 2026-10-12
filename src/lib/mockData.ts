@@ -252,22 +252,130 @@ export const INITIAL_APPLICATIONS: Application[] = [
     drive_id: 'd2222222-2222-2222-2222-222222222222',
     student_id: 's-student-001',
     applied_at: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
-    status: 'Shortlisted',
+    status: 'Interview in Progress',
     current_round: 'Technical CS & DSA Round',
     feedback: 'Cleared online assessment with 95 percentile score. Scheduled for technical interview.',
-    drive: INITIAL_DRIVES[1],
-    student: INITIAL_STUDENT_DATA
+    drive: INITIAL_DRIVES[1]
   },
   {
     id: 'app-002',
     drive_id: 'd1111111-1111-1111-1111-111111111111',
     student_id: 's-student-001',
-    applied_at: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
-    status: 'Applied',
+    applied_at: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Assessment Completed',
     current_round: 'Online Code Assessment (DSA)',
-    feedback: 'Application received and verified against eligibility criteria.',
-    drive: INITIAL_DRIVES[0],
-    student: INITIAL_STUDENT_DATA
+    feedback: 'Assessment test completed. Score under evaluation by Google recruiting team.',
+    drive: INITIAL_DRIVES[0]
+  },
+  {
+    id: 'app-003',
+    drive_id: 'd1111111-1111-1111-1111-111111111111',
+    student_id: 's-student-002',
+    applied_at: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Offer Received',
+    current_round: 'Googliness & Behavioral Fit',
+    feedback: 'Selected for SDE-1 role. Formal offer letter received: 32.50 LPA.',
+    drive: INITIAL_DRIVES[0]
+  },
+  {
+    id: 'app-004',
+    drive_id: 'd2222222-2222-2222-2222-222222222222',
+    student_id: 's-student-002',
+    applied_at: new Date(Date.now() - 12 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Selected',
+    current_round: 'AA / Senior Principal Round',
+    feedback: 'Recommended for hiring by Azure Developer Division. Offer package: 28.00 LPA.',
+    drive: INITIAL_DRIVES[1]
+  },
+  {
+    id: 'app-005',
+    drive_id: 'd3333333-3333-3333-3333-333333333333',
+    student_id: 's-student-003',
+    applied_at: new Date(Date.now() - 8 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Selected',
+    current_round: 'Bar Raiser Round',
+    feedback: 'Cleared all rounds. PPO extended: 24.00 LPA.',
+    drive: INITIAL_DRIVES[2]
+  },
+  {
+    id: 'app-006',
+    drive_id: 'd5555555-5555-5555-5555-555555555555',
+    student_id: 's-student-004',
+    applied_at: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Offer Received',
+    current_round: 'Partner Fit Interview',
+    feedback: 'Offer released for Technology Consulting practice: 11.50 LPA.',
+    drive: INITIAL_DRIVES[4]
+  },
+  {
+    id: 'app-007',
+    drive_id: 'd4444444-4444-4444-4444-444444444444',
+    student_id: 's-student-006',
+    applied_at: new Date(Date.now() - 9 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Selected',
+    current_round: 'Executive Committee Round',
+    feedback: 'Selected for Quantitative Tech role: 26.00 LPA.',
+    drive: INITIAL_DRIVES[3]
+  },
+  {
+    id: 'app-008',
+    drive_id: 'd5555555-5555-5555-5555-555555555555',
+    student_id: 's-student-007',
+    applied_at: new Date(Date.now() - 15 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Joined',
+    current_round: 'Onboarding & Joining Verification',
+    feedback: 'Onboarding confirmed. Joining document submitted: 11.50 LPA.',
+    drive: INITIAL_DRIVES[4]
+  },
+  {
+    id: 'app-009',
+    drive_id: 'd5555555-5555-5555-5555-555555555555',
+    student_id: 's-student-005',
+    applied_at: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Shortlisted',
+    current_round: 'Case Study & Tech Round',
+    feedback: 'Cognitive test cleared. Scheduled for case study presentation.',
+    drive: INITIAL_DRIVES[4]
+  },
+  {
+    id: 'app-010',
+    drive_id: 'd2222222-2222-2222-2222-222222222222',
+    student_id: 's-student-008',
+    applied_at: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Eligibility Verified',
+    current_round: 'Academic Clearance & CGPA Check',
+    feedback: 'CGPA criteria satisfied. Hall ticket issued for online assessment.',
+    drive: INITIAL_DRIVES[1]
+  },
+  {
+    id: 'app-011',
+    drive_id: 'd5555555-5555-5555-5555-555555555555',
+    student_id: 's-student-009',
+    applied_at: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Registered',
+    current_round: 'Application Screening',
+    feedback: 'Application registered. Awaiting initial screening.',
+    drive: INITIAL_DRIVES[4]
+  },
+  {
+    id: 'app-012',
+    drive_id: 'd4444444-4444-4444-4444-444444444444',
+    student_id: 's-student-001',
+    applied_at: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Rejected',
+    current_round: 'Aptitude & Math Challenge',
+    feedback: 'Did not meet quantitative test cutoff score.',
+    drive: INITIAL_DRIVES[3]
+  },
+  {
+    id: 'app-013',
+    drive_id: 'd2222222-2222-2222-2222-222222222222',
+    student_id: 's-student-005',
+    applied_at: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
+    status: 'Withdrawn',
+    current_round: 'Student Opt-Out',
+    feedback: 'Candidate voluntarily withdrew from recruitment process.',
+    drive: INITIAL_DRIVES[1]
   }
 ];
 
@@ -326,7 +434,10 @@ export const INITIAL_STUDENTS_LIST: Student[] = [
     cgpa: 7.80,
     backlogs_count: 0,
     skills: ['Python', 'Embedded C', 'IoT', 'Machine Learning'],
-    placement_status: 'Unplaced',
+    placement_status: 'Placed',
+    placed_company_id: 'c5555555-5555-5555-5555-555555555555',
+    placed_company_name: 'Deloitte',
+    package_lpa: 11.50,
     profile: {
       id: 's-student-004',
       email: 'meera.k@university.edu',
@@ -353,6 +464,107 @@ export const INITIAL_STUDENTS_LIST: Student[] = [
       role: 'student',
       avatar_url: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80',
       phone: '+91 96500 44321'
+    }
+  },
+  {
+    id: 's-student-006',
+    roll_number: '22CS1055',
+    department: 'Computer Science & Engineering',
+    degree: 'B.Tech',
+    graduation_year: 2026,
+    cgpa: 8.95,
+    backlogs_count: 0,
+    skills: ['Python', 'Golang', 'Kubernetes', 'Financial Algorithms'],
+    placement_status: 'Placed',
+    placed_company_id: 'c4444444-4444-4444-4444-444444444444',
+    placed_company_name: 'Goldman Sachs',
+    package_lpa: 26.00,
+    profile: {
+      id: 's-student-006',
+      email: 'priya.s@university.edu',
+      full_name: 'Priya Sundaram',
+      role: 'student',
+      avatar_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+      phone: '+91 98112 55443'
+    }
+  },
+  {
+    id: 's-student-007',
+    roll_number: '22IT1024',
+    department: 'Information Technology',
+    degree: 'B.Tech',
+    graduation_year: 2026,
+    cgpa: 8.10,
+    backlogs_count: 0,
+    skills: ['Node.js', 'React', 'Cloud Engineering', 'DevOps'],
+    placement_status: 'Placed',
+    placed_company_id: 'c5555555-5555-5555-5555-555555555555',
+    placed_company_name: 'Deloitte',
+    package_lpa: 11.50,
+    profile: {
+      id: 's-student-007',
+      email: 'anish.k@university.edu',
+      full_name: 'Anish Kulkarni',
+      role: 'student',
+      avatar_url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+      phone: '+91 97230 11984'
+    }
+  },
+  {
+    id: 's-student-008',
+    roll_number: '22EC1044',
+    department: 'Electronics & Communication',
+    degree: 'B.Tech',
+    graduation_year: 2026,
+    cgpa: 7.65,
+    backlogs_count: 0,
+    skills: ['VLSI', 'Verilog', 'C++', 'Digital Design'],
+    placement_status: 'Unplaced',
+    profile: {
+      id: 's-student-008',
+      email: 'sneha.m@university.edu',
+      full_name: 'Sneha Mukherjee',
+      role: 'student',
+      avatar_url: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80',
+      phone: '+91 98300 77211'
+    }
+  },
+  {
+    id: 's-student-009',
+    roll_number: '22ME1032',
+    department: 'Mechanical Engineering',
+    degree: 'B.Tech',
+    graduation_year: 2026,
+    cgpa: 6.90,
+    backlogs_count: 1,
+    skills: ['SolidWorks', 'MATLAB', 'Automotive Systems'],
+    placement_status: 'Unplaced',
+    profile: {
+      id: 's-student-009',
+      email: 'vikram.r@university.edu',
+      full_name: 'Vikram Rathore',
+      role: 'student',
+      avatar_url: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&auto=format&fit=crop&q=80',
+      phone: '+91 99120 44820'
+    }
+  },
+  {
+    id: 's-student-010',
+    roll_number: '21CS1002',
+    department: 'Computer Science & Engineering',
+    degree: 'B.Tech',
+    graduation_year: 2025,
+    cgpa: 9.10,
+    backlogs_count: 0,
+    skills: ['Machine Learning', 'NLP', 'PyTorch', 'Research'],
+    placement_status: 'Higher Studies',
+    profile: {
+      id: 's-student-010',
+      email: 'aditi.r@university.edu',
+      full_name: 'Aditi Rao',
+      role: 'student',
+      avatar_url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+      phone: '+91 98450 33219'
     }
   }
 ];

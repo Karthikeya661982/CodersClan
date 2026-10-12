@@ -88,6 +88,13 @@ export const CoordinatorDashboard: React.FC = () => {
             <span>Create Drive</span>
           </Link>
           <Link
+            to="/coordinator/analytics"
+            className="flex items-center gap-1.5 rounded-xl bg-indigo-500/30 border border-indigo-400/40 px-4 py-2.5 text-xs font-semibold text-white hover:bg-indigo-500/50 transition backdrop-blur-xs"
+          >
+            <BarChart3 className="h-4 w-4 text-indigo-300" />
+            <span>Placement Analytics</span>
+          </Link>
+          <Link
             to="/coordinator/companies"
             className="flex items-center gap-1.5 rounded-xl bg-white/10 px-4 py-2.5 text-xs font-semibold text-white hover:bg-white/20 transition backdrop-blur-xs"
           >

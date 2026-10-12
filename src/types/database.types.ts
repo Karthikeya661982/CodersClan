@@ -6,7 +6,25 @@ export type CompanyTier = 'Super Dream' | 'Dream' | 'Tier 1' | 'Tier 2' | 'Mass'
 
 export type DriveStatus = 'Draft' | 'Upcoming' | 'Ongoing' | 'Completed' | 'Cancelled';
 
-export type ApplicationStatus = 'Applied' | 'Shortlisted' | 'Interviewing' | 'Selected' | 'Rejected' | 'Withdrawn';
+export const PIPELINE_STAGES = [
+  'Registered',
+  'Eligibility Verified',
+  'Shortlisted',
+  'Assessment Completed',
+  'Interview in Progress',
+  'Selected',
+  'Offer Received',
+  'Joined',
+  'Rejected',
+  'Withdrawn'
+] as const;
+
+export type PipelineStage = typeof PIPELINE_STAGES[number];
+
+export type ApplicationStatus = 
+  | PipelineStage
+  | 'Applied'       // Legacy alias for Registered
+  | 'Interviewing'; // Legacy alias for Interview in Progress
 
 export interface Profile {
   id: string;

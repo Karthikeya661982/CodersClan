@@ -11,7 +11,8 @@ import {
   UserCheck, 
   Sparkles,
   Layers,
-  GraduationCap
+  GraduationCap,
+  BarChart3
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -50,6 +51,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen = true, onClose }) => {
       label: 'Applications & Shortlist',
       icon: CheckCircle2,
       badge: 'Review'
+    },
+    {
+      to: '/coordinator/analytics',
+      label: 'Placement Analytics',
+      icon: BarChart3,
+      badge: 'Reports'
     }
   ];
 

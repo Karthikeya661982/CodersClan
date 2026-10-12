@@ -20,6 +20,7 @@ import { ManageDrives } from './pages/coordinator/ManageDrives';
 import { ManageCompanies } from './pages/coordinator/ManageCompanies';
 import { ManageStudents } from './pages/coordinator/ManageStudents';
 import { ApplicationsReview } from './pages/coordinator/ApplicationsReview';
+import { PlacementAnalytics } from './pages/coordinator/PlacementAnalytics';
 
 // 404
 import { NotFound } from './pages/NotFound';
@@ -88,6 +89,7 @@ export function App() {
             <Route path="companies" element={<ManageCompanies />} />
             <Route path="students" element={<ManageStudents />} />
             <Route path="applications" element={<ApplicationsReview />} />
+            <Route path="analytics" element={<PlacementAnalytics />} />
           </Route>
 
           {/* 404 Catch All */}
