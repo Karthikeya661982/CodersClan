@@ -147,11 +147,18 @@ export const ApplicationsReview: React.FC = () => {
             className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs text-slate-900 focus:border-indigo-600"
           >
             <option value="All">All Application Statuses</option>
-            <option value="Applied">Applied (Pending Screening)</option>
+            <option value="Registered">Registered</option>
+            <option value="Eligibility Verified">Eligibility Verified</option>
             <option value="Shortlisted">Shortlisted</option>
-            <option value="Interviewing">Interviewing</option>
-            <option value="Selected">Selected / Offered</option>
+            <option value="Assessment Completed">Assessment Completed</option>
+            <option value="Interview in Progress">Interview in Progress</option>
+            <option value="Selected">Selected</option>
+            <option value="Offer Received">Offer Received</option>
+            <option value="Joined">Joined</option>
             <option value="Rejected">Rejected</option>
+            <option value="Withdrawn">Withdrawn</option>
+            <option value="Applied">Applied (Legacy)</option>
+            <option value="Interviewing">Interviewing (Legacy)</option>
           </select>
         </div>
       </div>
@@ -240,11 +247,16 @@ export const ApplicationsReview: React.FC = () => {
                     onChange={(e: any) => setNewStatus(e.target.value)}
                     className="w-full rounded-lg border border-slate-300 p-2 text-xs text-slate-900 font-semibold"
                   >
-                    <option value="Applied">Applied</option>
+                    <option value="Registered">Registered</option>
+                    <option value="Eligibility Verified">Eligibility Verified</option>
                     <option value="Shortlisted">Shortlisted</option>
-                    <option value="Interviewing">Interviewing</option>
-                    <option value="Selected">Selected (Offer Released)</option>
+                    <option value="Assessment Completed">Assessment Completed</option>
+                    <option value="Interview in Progress">Interview in Progress</option>
+                    <option value="Selected">Selected</option>
+                    <option value="Offer Received">Offer Received</option>
+                    <option value="Joined">Joined</option>
                     <option value="Rejected">Rejected</option>
+                    <option value="Withdrawn">Withdrawn</option>
                   </select>
                 </div>
 

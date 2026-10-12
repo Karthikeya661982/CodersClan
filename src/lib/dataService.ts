@@ -176,7 +176,14 @@ export const dataService = {
     }
 
     const local = getLocal<Application[]>(STORAGE_KEYS.APPLICATIONS, INITIAL_APPLICATIONS);
-    return studentId ? local.filter(a => a.student_id === studentId) : local;
+    const drives = await this.getDrives();
+    const students = await this.getStudents();
+    const enriched = local.map(a => ({
+      ...a,
+      drive: a.drive || drives.find(d => d.id === a.drive_id),
+      student: a.student || students.find(s => s.id === a.student_id)
+    }));
+    return studentId ? enriched.filter(a => a.student_id === studentId) : enriched;
   },
 
   async applyForDrive(driveId: string, student: Student): Promise<Application> {

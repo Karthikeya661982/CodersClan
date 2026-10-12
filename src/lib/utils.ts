@@ -53,12 +53,22 @@ export function getTierBadgeClass(tier: string): string {
 
 export function getApplicationStatusBadgeClass(status: string): string {
   switch (status) {
-    case 'Selected':
+    case 'Joined':
+      return 'bg-purple-100 text-purple-800 border-purple-300';
+    case 'Offer Received':
       return 'bg-emerald-100 text-emerald-800 border-emerald-300';
+    case 'Selected':
+      return 'bg-green-100 text-green-800 border-green-300';
+    case 'Interview in Progress':
     case 'Interviewing':
       return 'bg-blue-100 text-blue-800 border-blue-300';
+    case 'Assessment Completed':
+      return 'bg-cyan-100 text-cyan-800 border-cyan-300';
     case 'Shortlisted':
       return 'bg-amber-100 text-amber-800 border-amber-300';
+    case 'Eligibility Verified':
+      return 'bg-teal-100 text-teal-800 border-teal-300';
+    case 'Registered':
     case 'Applied':
       return 'bg-slate-100 text-slate-700 border-slate-300';
     case 'Rejected':
